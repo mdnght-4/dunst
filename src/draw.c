@@ -678,9 +678,9 @@ static void render_content(cairo_t *c, struct colored_layout *cl, int width, dou
                 // Note: the bar could be drawn a bit smaller, because the frame is drawn on top
                 
                 // // border
-                // cairo_set_source_rgba(c, cl->frame.r, cl->frame.g, cl->frame.b, cl->frame.a);
-                // draw_rounded_rect(c, (frame_x + half_frame_width + 1), (frame_y + half_frame_width), (progress_width - frame_width), progress_height, progress_height / 2, scale, true, true);
-                // cairo_fill(c);
+                 cairo_set_source_rgba(c, cl->frame.r, cl->frame.g, cl->frame.b, cl->frame.a);
+                 draw_rounded_rect(c, (frame_x + half_frame_width + 1), (frame_y + half_frame_width), (progress_width - frame_width), progress_height, progress_height / 2, scale, true, true);
+                 cairo_fill(c);
 
 
                 // left side
@@ -696,7 +696,7 @@ static void render_content(cairo_t *c, struct colored_layout *cl, int width, dou
 
 
                 // draw calls for progress bar circle
-                int circle_width = progress_height * 1.3;
+                /*int circle_width = progress_height * 1.3;
                 const int circle_thickness = 3;
                 const double degrees = M_PI / 180.0;
 
@@ -716,7 +716,7 @@ static void render_content(cairo_t *c, struct colored_layout *cl, int width, dou
                 // draw the highlight-colored circle outline
                 cairo_set_source_rgba(c, cl->highlight.r, cl->highlight.g, cl->highlight.b, cl->highlight.a);
                 cairo_set_line_width(c, circle_thickness);
-                cairo_stroke(c);
+                cairo_stroke(c);*/
         }
 }
 
