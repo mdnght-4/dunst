@@ -15,7 +15,7 @@ All credits go to [k-vernooy](https://github.com/k-vernooy) as I just commented 
 
 # Installation
 ```
-git clone https://github.com/midnight/dunst && cd dunst
+git clone https://github.com/midnightxd/dunst.git && cd dunst
 ```
 
 ```
